@@ -9,11 +9,29 @@ body {
     height: 100vh;
     display: grid;
     place-items: center;
+    position: relative;
+    background: #f8f8f8;
 }
 
 .board{
     width: 100%;
     max-width: 400px;
-    height: 400px;
-    background-color: yellow;
+    height: 100%;
+    max-height: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.board > button {
+    width: 100%;
+    max-width: 133.3px;
+    height: 100%;
+    max-height: 133.33px;
+    cursor: pointer;
+    font-size: 5em;
+    font-family:  Verdana, sans-serif;
+    background-color: transparent;
 }
